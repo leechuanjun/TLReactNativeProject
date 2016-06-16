@@ -1,5 +1,5 @@
 /**
- * Course 3
+ * Course 4
  * TextInput实战-仿照QQ登录界面
  */
  import React, { Component } from 'react';

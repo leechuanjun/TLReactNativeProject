@@ -23,6 +23,7 @@ import Course1 from '../component/course1';
 import Course2 from '../component/course2';
 import Course3 from '../component/course3';
 import Course4 from '../component/course4';
+import Course5 from '../component/course5';
 
 export default class extends Component{
  constructor() {
@@ -33,6 +34,7 @@ export default class extends Component{
       ,{ key:1, title: "Text", component: Course2, isFA: false, icon: "ios-text", size: 50, color: "#90bdc1", hideNav: false, }
       ,{ key:2, title: "Image", component: Course3, isFA: false, icon: "ios-images", size: 50, color: "#2aa2ef", hideNav: false, }
       ,{ key:3, title: "InputText", component: Course4, isFA: false, icon: "ios-create", size: 50, color: "#FF9A05", hideNav: true, }
+      ,{ key:4, title: "ProgressViewIOS", component: Course5, isFA: false, icon: "ios-fastforward", size: 50, color: "#00D204", hideNav: false, }
     ]
    }
  }
