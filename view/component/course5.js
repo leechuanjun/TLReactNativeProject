@@ -12,10 +12,8 @@
  } from 'react-native';
 
  import Util from '../utils';
- import TimerMixin from 'react-timer-mixin';
 
  class ProgressViewExample extends Component{
-  mixins: [TimerMixin];
 
   constructor() {
     super()
@@ -31,7 +29,6 @@
   updateProgress() {
     var progress = this.state.progress + 0.01;
     this.setState({ progress });
-    // this.requestAnimationFrame(() => this.updateProgress());
   }
 
   getProgress(offset) {
@@ -43,7 +40,7 @@
     return (
       <View style={styles.container}>
         <ProgressViewIOS style={styles.progressView} progress={this.getProgress(0)}/>
-        <ProgressViewIOS style={styles.progressView} progressTintColor="purple" progress={this.getProgress(0.2)}/>
+        <ProgressViewIOS style={styles.progressView} progressTintColor="purple" trackTintColor="green" progress={this.getProgress(0.2)}/>
         <ProgressViewIOS style={styles.progressView} progressTintColor="red" progress={this.getProgress(0.4)}/>
         <ProgressViewIOS style={styles.progressView} progressTintColor="orange" progress={this.getProgress(0.6)}/>
         <ProgressViewIOS style={styles.progressView} progressTintColor="yellow" progress={this.getProgress(0.8)}/>
@@ -80,10 +77,12 @@
      alignSelf:'center',
    },
    container: {
-    marginTop: 20,
+    marginTop: 30,
     backgroundColor: 'transparent',
+    marginLeft:20,
+    marginRight:20
   },
   progressView: {
-    marginTop: 20,
+    marginTop: 30,
   }
  });
