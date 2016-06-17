@@ -16,3 +16,5 @@ Course5 : React Native控件之ProgressViewIOS进度条讲解。
 Course6 : React Native控件之ScrollView组件讲解。
 
 Course7 : React Native控件之Switch与Picker组件讲解以及使用。
+
+Course8 : React Native控件之Touchable*系列组件详解。
