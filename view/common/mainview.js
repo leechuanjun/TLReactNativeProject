@@ -25,6 +25,7 @@ import Course3 from '../component/course3';
 import Course4 from '../component/course4';
 import Course5 from '../component/course5';
 import Course6 from '../component/course6';
+import Course7 from '../component/course7';
 
 export default class extends Component{
  constructor() {
@@ -37,6 +38,7 @@ export default class extends Component{
       ,{ key:3, title: "InputText", component: Course4, isFA: false, icon: "ios-create", size: 50, color: "#FF9A05", hideNav: true, }
       ,{ key:4, title: "ProgressViewIOS", component: Course5, isFA: false, icon: "ios-fastforward", size: 50, color: "#00D204", hideNav: false, }
       ,{ key:5, title: "ScrollView", component: Course6, isFA: false, icon: "ios-sync", size: 50, color: "#777", hideNav: false, }
+      ,{ key:6, title: "Switch&PickerIOS", component: Course7, isFA: false, icon: "ios-switch", size: 50, color: "#5e2a06", hideNav: false, }
     ]
    }
  }
