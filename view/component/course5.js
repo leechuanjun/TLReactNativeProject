@@ -1,6 +1,6 @@
 /**
  * Course 5
- * React Native控件之ProgressBarAndroid进度条讲解
+ * React Native控件之ProgressViewIOS进度条讲解
  */
  import React, { Component } from 'react';
  import {
