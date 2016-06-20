@@ -28,6 +28,8 @@ import Course6 from '../component/course6';
 import Course7 from '../component/course7';
 import Course8 from '../component/course8';
 import Course9 from '../component/course9';
+import Course10 from '../component/course10';
+import Course11 from '../component/course11';
 
 export default class extends Component{
  constructor() {
@@ -43,6 +45,8 @@ export default class extends Component{
       ,{ key:6, title: "Switch&PickerIOS", component: Course7, isFA: false, icon: "ios-switch", size: 50, color: "#5e2a06", hideNav: false, }
       ,{ key:7, title: "Touchable*系列", component: Course8, isFA: false, icon: "ios-hand", size: 50, color: "#4285f4", hideNav: false, }
       ,{ key:8, title: "ListView", component: Course9, isFA: false, icon: "ios-list-box", size: 50, color: "#2aa2ef", hideNav: false, }
+      ,{ key:9, title: "RefreshControl", component: Course10, isFA: false, icon: "ios-refresh-circle", size: 50, color: "#37465c", hideNav: false, }
+      ,{ key:10, title: "WebView", component: Course11, isFA: false, icon: "logo-html5", size: 50, color: "#fd856c", hideNav: false, }
     ]
    }
  }
@@ -98,7 +102,7 @@ export default class extends Component{
 const styles = StyleSheet.create({
  touchBox:{
    width: Util.size.width/4-0.33334,//Util.size.width/3-0.33334,
-   height:Util.size.width/4,
+   height:Util.size.width/4-0.33334,
    backgroundColor:"#fff",
  },
  touchBoxContainer:{
