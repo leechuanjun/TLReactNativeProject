@@ -30,6 +30,11 @@ import Course8 from '../component/course8';
 import Course9 from '../component/course9';
 import Course10 from '../component/course10';
 import Course11 from '../component/course11';
+import Course12 from '../component/course12';
+import Course13 from '../component/course13';
+import Course14 from '../component/course14';
+import Course15 from '../component/course15';
+import Course16 from '../component/course16';
 
 export default class extends Component{
  constructor() {
@@ -47,6 +52,11 @@ export default class extends Component{
       ,{ key:8, title: "ListView", component: Course9, isFA: false, icon: "ios-list-box", size: 50, color: "#2aa2ef", hideNav: false, }
       ,{ key:9, title: "RefreshControl", component: Course10, isFA: false, icon: "ios-refresh-circle", size: 50, color: "#37465c", hideNav: false, }
       ,{ key:10, title: "WebView", component: Course11, isFA: false, icon: "logo-html5", size: 50, color: "#fd856c", hideNav: false, }
+      ,{ key:11, title: "Navigator", component: Course12, isFA: false, icon: "ios-navigate", size: 50, color: "#fd8f9d", hideNav: false, }
+      ,{ key:12, title: "Clipboard", component: Course13, isFA: false, icon: "ios-clipboard", size: 50, color: "#ff6b6b", hideNav: false, }
+      ,{ key:13, title: "DatePickerIOS", component: Course14, isFA: false, icon: "ios-stopwatch", size: 50, color: "#ec240e", hideNav: false, }
+      ,{ key:14, title: "StatusBar", component: Course15, isFA: false, icon: "ios-stats", size: 50, color: "#32A69B", hideNav: false, }
+      ,{ key:15, title: "PickerIOS", component: Course16, isFA: false, icon: "ios-checkmark", size: 50, color: "#69B32A", hideNav: false, }
     ]
    }
  }
@@ -102,7 +112,7 @@ export default class extends Component{
 const styles = StyleSheet.create({
  touchBox:{
    width: Util.size.width/4-0.33334,//Util.size.width/3-0.33334,
-   height:Util.size.width/4-0.33334,
+   height:Util.size.width/4-0.33332,
    backgroundColor:"#fff",
  },
  touchBoxContainer:{
