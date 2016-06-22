@@ -35,6 +35,12 @@ import Course13 from '../component/course13';
 import Course14 from '../component/course14';
 import Course15 from '../component/course15';
 import Course16 from '../component/course16';
+import Course17 from '../component/course17';
+import Course18 from '../component/course18';
+import Course19 from '../component/course19';
+import Course20 from '../component/course20';
+import Course21 from '../component/course21';
+import Course22 from '../component/course22';
 
 export default class extends Component{
  constructor() {
@@ -57,6 +63,12 @@ export default class extends Component{
       ,{ key:13, title: "DatePickerIOS", component: Course14, isFA: false, icon: "ios-stopwatch", size: 50, color: "#ec240e", hideNav: false, }
       ,{ key:14, title: "StatusBar", component: Course15, isFA: false, icon: "ios-stats", size: 50, color: "#32A69B", hideNav: false, }
       ,{ key:15, title: "PickerIOS", component: Course16, isFA: false, icon: "ios-checkmark", size: 50, color: "#69B32A", hideNav: false, }
+      ,{ key:16, title: "SegmentedControlIOS", component: Course17, isFA: false, icon: "ios-map", size: 50, color: "#fdbded", hideNav: false, }
+      ,{ key:17, title: "SliderIOS", component: Course18, isFA: false, icon: "ios-options", size: 50, color: "#68d746", hideNav: false, }
+      ,{ key:18, title: "TabBarIOS", component: Course19, isFA: false, icon: "ios-tablet-portrait", size: 50, color: "#fe952b", hideNav: false, }
+      ,{ key:19, title: "ProgressViewIOS", component: Course20, isFA: false, icon: "ios-git-commit", size: 50, color: "#4285f4", hideNav: false, }
+      ,{ key:20, title: "ActivityIndicatorIOS", component: Course21, isFA: false, icon: "ios-pricetag", size: 50, color: "#23bfe7", hideNav: false, }
+      ,{ key:21, title: "Modal", component: Course22, isFA: false, icon: "logo-steam", size: 50, color: "#e32524", hideNav: false, }
     ]
    }
  }
@@ -112,7 +124,7 @@ export default class extends Component{
 const styles = StyleSheet.create({
  touchBox:{
    width: Util.size.width/4-0.33334,//Util.size.width/3-0.33334,
-   height:Util.size.width/4-0.33332,
+   height:Util.size.width/4-0.2,
    backgroundColor:"#fff",
  },
  touchBoxContainer:{

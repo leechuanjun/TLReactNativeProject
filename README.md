@@ -31,6 +31,18 @@
 
 * Course14 : React Native控件之`DatePickerIOS`时间日期选择器组件讲解。
 
-* Course15 : React Native控件之`StatusBar`状态栏详解
+* Course15 : React Native控件之`StatusBar`状态栏详解。
 
-* Course16 : React Native控件之`PickerIOS`选择器详解-适配iOS开发
+* Course16 : React Native控件之`PickerIOS`选择器详解-适配iOS开发。
+
+* Course17 : React Native 控件之`SegmentedControlIOS`分段组件详解-适配iOS开发。
+
+* Course18 : React Native控件之`Slider`滑块组件详解-适配Android/iOS开发
+
+* Course19 : React Native控件之`TabBarIOS`和`TabBarIOS.Item`组件详解及实例
+
+* Course20 : React Native控件之`ProgressViewIOS`进度加载组件详解及实例
+
+* Course21 : React Native控件之`ActivityIndicatorIOS`进度指示器组件详解及实例
+
+* Course22 : React Native 控件之`Modal详解-Android/iOS`双平台通用
