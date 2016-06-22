@@ -41,6 +41,7 @@ import Course19 from '../component/course19';
 import Course20 from '../component/course20';
 import Course21 from '../component/course21';
 import Course22 from '../component/course22';
+import Course23 from '../apimodule/course23';
 
 export default class extends Component{
  constructor() {
@@ -69,6 +70,7 @@ export default class extends Component{
       ,{ key:19, title: "ProgressViewIOS", component: Course20, isFA: false, icon: "ios-git-commit", size: 50, color: "#4285f4", hideNav: false, }
       ,{ key:20, title: "ActivityIndicatorIOS", component: Course21, isFA: false, icon: "ios-pricetag", size: 50, color: "#23bfe7", hideNav: false, }
       ,{ key:21, title: "Modal", component: Course22, isFA: false, icon: "logo-steam", size: 50, color: "#e32524", hideNav: false, }
+      ,{ key:22, title: "Alert", component: Course23, isFA: false, icon: "ios-alert", size: 50, color: "#00ab6b", hideNav: false, }
     ]
    }
  }

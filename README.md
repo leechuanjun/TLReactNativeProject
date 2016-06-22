@@ -3,6 +3,8 @@
 
 ## 课题目录
 
+### 组件学习
+
 * Course1 : React Native控件之`View`视图讲解。
 
 * Course2 : React Native控件之`Text`组件讲解。
@@ -37,12 +39,16 @@
 
 * Course17 : React Native 控件之`SegmentedControlIOS`分段组件详解-适配iOS开发。
 
-* Course18 : React Native控件之`Slider`滑块组件详解-适配Android/iOS开发
+* Course18 : React Native控件之`Slider`滑块组件详解-适配Android/iOS开发。
 
-* Course19 : React Native控件之`TabBarIOS`和`TabBarIOS.Item`组件详解及实例
+* Course19 : React Native控件之`TabBarIOS`和`TabBarIOS.Item`组件详解及实例。
 
-* Course20 : React Native控件之`ProgressViewIOS`进度加载组件详解及实例
+* Course20 : React Native控件之`ProgressViewIOS`进度加载组件详解及实例。
 
-* Course21 : React Native控件之`ActivityIndicatorIOS`进度指示器组件详解及实例
+* Course21 : React Native控件之`ActivityIndicatorIOS`进度指示器组件详解及实例。
 
-* Course22 : React Native 控件之`Modal详解-Android/iOS`双平台通用
+* Course22 : React Native 控件之`Modal详解-Android/iOS`双平台通用。
+
+### API模块学习
+
+* Course23 : React Native API模块之`Alert`弹出框详解及使用。
