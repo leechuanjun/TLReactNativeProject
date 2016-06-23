@@ -51,4 +51,8 @@
 
 ### API模块学习
 
-* Course23 : React Native API模块之`Alert`弹出框详解及使用。
+* Course23 : React Native API模块之`Alert`及第三方库`react-native-sk-toast`弹出框详解及使用。
+
+* Course24 : React Native API模块之`AppState`详解。
+
+* Course25 : React Native API模块之`NetInfo`(网络信息)使用详解。

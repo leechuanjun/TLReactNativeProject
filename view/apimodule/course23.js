@@ -1,6 +1,6 @@
 /**
- * Course
- * React Native
+ * Course 23
+ * React Native API模块之`Alert`及第三方库`react-native-sk-toast`弹出框详解及使用
  */
 import React, { Component } from 'react';
 import {
