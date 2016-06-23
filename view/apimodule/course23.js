@@ -8,11 +8,11 @@ import {
   Text,
   View,
   Alert,
-  ToastAndroid,
   TouchableHighlight,
 } from 'react-native';
 
 import Util from '../utils';
+import ToastIOS from 'react-native-sk-toast';
 
 class CustomButton extends React.Component {
   render() {
@@ -39,15 +39,15 @@ export default class extends Component{
           />
         <CustomButton text='点击弹出两个按钮的Alert'
           onPress={()=>Alert.alert('温馨提醒','确定退出吗?',[
-            {text:'取消',onPress:()=>ToastAndroid.show('你点击了取消~',ToastAndroid.SHORT)},
-            {text:'确定',onPress:()=>ToastAndroid.show('你点击了确定~',ToastAndroid.SHORT)}
+            {text:'取消',onPress:()=>ToastIOS.bottom('你点击了取消~')},
+            {text:'确定',onPress:()=>ToastIOS.bottom('你点击了确定~')}
             ])}
           />
         <CustomButton text='点击弹出三个按钮的Alert'
           onPress={()=>Alert.alert('温馨提醒','确定退出吗?',[
-            {text:'One',onPress:()=>ToastAndroid.show('你点击了One~',ToastAndroid.SHORT)},
-            {text:'Two',onPress:()=>ToastAndroid.show('你点击了Two~',ToastAndroid.SHORT)},
-            {text:'Three',onPress:()=>ToastAndroid.show('你点击了Three~',ToastAndroid.SHORT)}
+            {text:'One',onPress:()=>ToastIOS.top('你点击了One~')},
+            {text:'Two',onPress:()=>ToastIOS.center('你点击了Two~')},
+            {text:'Three',onPress:()=>ToastIOS.bottom('你点击了Three~')}
             ])}
           />
       </View>
