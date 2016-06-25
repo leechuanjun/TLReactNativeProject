@@ -44,12 +44,23 @@ import Course22 from '../component/course22';
 import Course23 from '../apimodule/course23';
 import Course24 from '../apimodule/course24';
 import Course25 from '../apimodule/course25';
+import Course26 from '../apimodule/course26';
+import Course27 from '../apimodule/course27';
+import Course28 from '../apimodule/course28';
+import Course29 from '../apimodule/course29';
+import Course30 from '../apimodule/course30';
+import Course31 from '../apimodule/course31';
+import Course32 from '../apimodule/course32';
+import Course33 from '../apimodule/course33';
+import Course34 from '../apimodule/course34';
+import Course35 from '../apimodule/course35';
+
 
 export default class extends Component{
  constructor() {
    super();
    this.state = {
-     courses:[
+     courses_component:[
        { key:0, title: "View", component: Course1, isFA: false, icon: "ios-paper", size: 50, color: "#ff856c", hideNav: false, }
       ,{ key:1, title: "Text", component: Course2, isFA: false, icon: "ios-text", size: 50, color: "#90bdc1", hideNav: false, }
       ,{ key:2, title: "Image", component: Course3, isFA: false, icon: "ios-images", size: 50, color: "#2aa2ef", hideNav: false, }
@@ -72,31 +83,61 @@ export default class extends Component{
       ,{ key:19, title: "ProgressViewIOS", component: Course20, isFA: false, icon: "ios-git-commit", size: 50, color: "#4285f4", hideNav: false, }
       ,{ key:20, title: "ActivityIndicatorIOS", component: Course21, isFA: false, icon: "ios-pricetag", size: 50, color: "#23bfe7", hideNav: false, }
       ,{ key:21, title: "Modal", component: Course22, isFA: false, icon: "logo-steam", size: 50, color: "#e32524", hideNav: false, }
-      ,{ key:22, title: "Alert", component: Course23, isFA: false, icon: "ios-alert", size: 50, color: "#00ab6b", hideNav: false, }
-      ,{ key:23, title: "AppState", component: Course24, isFA: false, icon: "ios-at", size: 50, color: "#893D54", hideNav: false, }
-      ,{ key:24, title: "NetInfo", component: Course25, isFA: false, icon: "ios-planet", size: 50, color: "#248ef5", hideNav: false, }
-    ]
+    ],
+    courses_api:[
+     ,{ key:22, title: "Alert", component: Course23, isFA: false, icon: "ios-alert", size: 50, color: "#00ab6b", hideNav: false, }
+     ,{ key:23, title: "AppState", component: Course24, isFA: false, icon: "ios-at", size: 50, color: "#893D54", hideNav: false, }
+     ,{ key:24, title: "NetInfo", component: Course25, isFA: false, icon: "ios-planet", size: 50, color: "#248ef5", hideNav: false, }
+     ,{ key:25, title: "AsyncStorage", component: Course26, isFA: false, icon: "ios-appstore", size: 50, color: "#f5248e", hideNav: false, }
+     ,{ key:26, title: "Dimensions", component: Course27, isFA: false, icon: "ios-expand", size: 50, color: "#48f52e", hideNav: false, }
+     ,{ key:27, title: "StyleSheet", component: Course28, isFA: false, icon: "ios-aperture", size: 50, color: "#f27405", hideNav: false, }
+     ,{ key:28, title: "PixelRatio", component: Course29, isFA: false, icon: "ios-code-working", size: 50, color: "#f2d405", hideNav: false, }
+     ,{ key:29, title: "AlertIOS", component: Course30, isFA: false, icon: "ios-alert-outline", size: 50, color: "#f21105", hideNav: false, }
+     ,{ key:30, title: "AppStateIOS", component: Course31, isFA: false, icon: "ios-at-outline", size: 50, color: "#f22205", hideNav: false, }
+     ,{ key:31, title: "ActionSheetIOS", component: Course32, isFA: false, icon: "ios-analytics", size: 50, color: "#f23305", hideNav: false, }
+     ,{ key:32, title: "Vibration", component: Course33, isFA: false, icon: "ios-archive-outline", size: 50, color: "#f24405", hideNav: false, }
+     ,{ key:33, title: "Linking", component: Course34, isFA: false, icon: "logo-designernews", size: 50, color: "#f25505", hideNav: false, }
+     ,{ key:34, title: "LayoutAnimation", component: Course35, isFA: false, icon: "ios-beer-outline", size: 50, color: "#f26605", hideNav: false, }
+   ]
    }
  }
 
  componentWillMount() {
  }
 
- _jumpToCourses(index){
+ _jumpToCourses_component(index){
    this.props.navigator.push({
-     title: this.state.courses[index].title,
-     component: this.state.courses[index].component,
-     navigationBarHidden: this.state.courses[index].hideNav,
+     title: this.state.courses_component[index].title,
+     component: this.state.courses_component[index].component,
+     navigationBarHidden: this.state.courses_component[index].hideNav,
+   })
+ }
+
+ _jumpToCourses_api(index){
+   this.props.navigator.push({
+     title: this.state.courses_api[index].title,
+     component: this.state.courses_api[index].component,
+     navigationBarHidden: this.state.courses_api[index].hideNav,
    })
  }
 
  render() {
    var onThis = this;
-   var boxs = this.state.courses.map(function(elem, index) {
+   var boxs_component = this.state.courses_component.map(function(elem, index) {
      return(
-       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses(index)}>
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_component(index)}>
          <View style={styles.boxContainer}>
            <Text style={styles.boxText}>Course{index+1}</Text>
+           {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
+         </View>
+       </TouchableHighlight>
+     );
+   })
+   var boxs_api = this.state.courses_api.map(function(elem, index) {
+     return(
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_api(index)}>
+         <View style={styles.boxContainer}>
+           <Text style={styles.boxText}>Course{index+22}</Text>
            {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
          </View>
        </TouchableHighlight>
@@ -119,8 +160,17 @@ export default class extends Component{
            </View>
          </TouchableHighlight>
        </Swiper>
+       <View style={styles.titleView}>
+         <Text style={styles.titleDesc}>一、组件学习</Text>
+       </View>
        <View style={styles.touchBoxContainer}>
-         {boxs}
+         {boxs_component}
+       </View>
+       <View style={styles.titleView}>
+         <Text style={styles.titleDesc}>二、API模块学习</Text>
+       </View>
+       <View style={styles.touchBoxContainer}>
+         {boxs_api}
        </View>
      </ScrollView>
    );
@@ -194,5 +244,17 @@ const styles = StyleSheet.create({
    width: Util.size.width,
    flex: 1,
    alignSelf: 'stretch',
+ },
+ titleDesc: {
+   fontSize: 20,
+   textAlign: 'left',
+   margin: 20,
+   color:'#fff',
+   alignSelf:'center'
+ },
+ titleView: {
+   height:45,
+   backgroundColor:'#a5b5c5',
+   justifyContent:'center',
  },
 });

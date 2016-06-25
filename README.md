@@ -56,3 +56,23 @@
 * Course24 : React Native API模块之`AppState`详解。
 
 * Course25 : React Native API模块之`NetInfo`(网络信息)使用详解。
+
+* Course26 : React Native API模块之`AsyncStorage`(持久化存储)使用详解。
+
+* Course27 : React Native API模块`Dimensions`屏幕宽高详解。
+
+* Course28 : React Native API模块`StyleSheet`样式表详解。
+
+* Course29 : React Native API模块`PixelRatio`设备像素密度详解。
+
+* Course30 : React Native API模块之`AlertIOS`弹框详解-适配iOS开发。
+
+* Course31 : React Native API模块之`AppStateIOS`运行状态详解-适配iOS开发。
+
+* Course32 : React Native API模块之`ActionSheetIOS`可点击弹框详解-适配iOS开发。
+
+* Course33 : React Native API模块之`Vibration`控制设备震动详解。
+
+* Course34 : React Native模块之`Linking`详解以及实例-Android/iOS双平台通用。
+
+* Course35 : React Native API模块之`LayoutAnimation`布局动画详解-Android/iOS通用。
