@@ -76,3 +76,15 @@
 * Course34 : React Native模块之`Linking`详解以及实例-Android/iOS双平台通用。
 
 * Course35 : React Native API模块之`LayoutAnimation`布局动画详解-Android/iOS通用。
+
+### React Native进阶学习
+
+* Course36 : React Native超棒的`LayoutAnimation`(布局动画)。
+
+* Course37 : React Native控件之组件`封装实例(Button按钮)`。
+
+* Course38 : React Native进阶之原生模块封装`基础篇`详解-适配iOS开发。
+
+* Course39 : React Native进阶之原生模块封装`特性篇`详解-适配iOS开发。
+
+* Course40 : React Native 进阶之原生`混合与数据通信开发`详解-适配iOS开发。

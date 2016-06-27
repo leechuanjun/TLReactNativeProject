@@ -54,7 +54,11 @@ import Course32 from '../apimodule/course32';
 import Course33 from '../apimodule/course33';
 import Course34 from '../apimodule/course34';
 import Course35 from '../apimodule/course35';
-
+import Course36 from '../advanced/course36';
+import Course37 from '../advanced/course37';
+import Course38 from '../advanced/course38';
+import Course39 from '../advanced/course39';
+import Course40 from '../advanced/course40';
 
 export default class extends Component{
  constructor() {
@@ -98,6 +102,13 @@ export default class extends Component{
      ,{ key:32, title: "Vibration", component: Course33, isFA: false, icon: "ios-archive-outline", size: 50, color: "#f24405", hideNav: false, }
      ,{ key:33, title: "Linking", component: Course34, isFA: false, icon: "logo-designernews", size: 50, color: "#f25505", hideNav: false, }
      ,{ key:34, title: "LayoutAnimation", component: Course35, isFA: false, icon: "ios-beer-outline", size: 50, color: "#f26605", hideNav: false, }
+   ],
+   courses_advanced:[
+    ,{ key:35, title: "LayoutAnimation_Extension", component: Course36, isFA: false, icon: "ios-beer", size: 50, color: "#55ab6b", hideNav: false, }
+    ,{ key:36, title: "MoreCustomButton", component: Course37, isFA: false, icon: "ios-radio-button-on", size: 50, color: "#88ab6b", hideNav: false, }
+    ,{ key:37, title: "原生模块封装基础篇", component: Course38, isFA: false, icon: "ios-star", size: 50, color: "#ffab6b", hideNav: false, }
+    ,{ key:38, title: "原生模块封装特性篇", component: Course39, isFA: false, icon: "ios-star-half", size: 50, color: "#eeab6b", hideNav: false, }
+    ,{ key:39, title: "原生混合与数据通信开发", component: Course40, isFA: false, icon: "ios-star-outline", size: 50, color: "#ddab6b", hideNav: false, }
    ]
    }
  }
@@ -121,6 +132,14 @@ export default class extends Component{
    })
  }
 
+ _jumpToCourses_advanced(index){
+   this.props.navigator.push({
+     title: this.state.courses_advanced[index].title,
+     component: this.state.courses_advanced[index].component,
+     navigationBarHidden: this.state.courses_advanced[index].hideNav,
+   })
+ }
+
  render() {
    var onThis = this;
    var boxs_component = this.state.courses_component.map(function(elem, index) {
@@ -135,9 +154,19 @@ export default class extends Component{
    })
    var boxs_api = this.state.courses_api.map(function(elem, index) {
      return(
-       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_api(index)}>
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_api(index)}>
          <View style={styles.boxContainer}>
            <Text style={styles.boxText}>Course{index+22}</Text>
+           {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
+         </View>
+       </TouchableHighlight>
+     );
+   })
+   var boxs_advanced = this.state.courses_advanced.map(function(elem, index) {
+     return(
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_advanced(index)}>
+         <View style={styles.boxContainer}>
+           <Text style={styles.boxText}>Course{index+35}</Text>
            {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
          </View>
        </TouchableHighlight>
@@ -172,6 +201,12 @@ export default class extends Component{
        <View style={styles.touchBoxContainer}>
          {boxs_api}
        </View>
+       <View style={styles.titleView}>
+         <Text style={styles.titleDesc}>三、进阶学习</Text>
+       </View>
+       <View style={styles.touchBoxContainer}>
+         {boxs_advanced}
+       </View>
      </ScrollView>
    );
  }
@@ -180,7 +215,7 @@ export default class extends Component{
 const styles = StyleSheet.create({
  touchBox:{
    width: Util.size.width/4-0.33334,//Util.size.width/3-0.33334,
-   height:Util.size.width/4-0.2,
+   height:Util.size.width/4-0.25,
    backgroundColor:"#fff",
  },
  touchBoxContainer:{

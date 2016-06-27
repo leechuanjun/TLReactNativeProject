@@ -21,7 +21,12 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		7E19F7911D217A390085ABC0 /* TLRNBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E19F7901D217A390085ABC0 /* TLRNBridgeModule.m */; };
+		7E19F7A31D217C590085ABC0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E19F7A21D217C590085ABC0 /* MainViewController.m */; };
+		7E19F7A61D217CD50085ABC0 /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E19F7A51D217CD50085ABC0 /* RNViewController.m */; };
+		7E19F7A91D217D0B0085ABC0 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E19F7A81D217D0B0085ABC0 /* OCViewController.m */; };
 		7E4235DF1D1C28FC006831B8 /* libReactNativeToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4235DB1D1C28EE006831B8 /* libReactNativeToast.a */; };
+		7E4236231D1F9CAC006831B8 /* libTLCalendarManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4236221D1F9C96006831B8 /* libTLCalendarManager.a */; };
 		7EF8A7051D113A7400B67276 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF8A7041D113A0E00B67276 /* libRNVectorIcons.a */; };
 		7EF8A7241D11405600B67276 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EF8A71C1D11405600B67276 /* Entypo.ttf */; };
 		7EF8A7251D11405600B67276 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EF8A71D1D11405600B67276 /* EvilIcons.ttf */; };
@@ -119,6 +124,13 @@
 			remoteGlobalIDString = 91B849731B3D3DA7000C8B92;
 			remoteInfo = ReactNativeToastTests;
 		};
+		7E4236211D1F9C96006831B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E42361D1D1F9C95006831B8 /* TLCalendarManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E4235FD1D1F95CB006831B8;
+			remoteInfo = TLCalendarManager;
+		};
 		7EF8A7031D113A0E00B67276 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EF8A6F51D113A0E00B67276 /* RNVectorIcons.xcodeproj */;
@@ -156,7 +168,16 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TLReactNativeProject/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7E19F78F1D217A390085ABC0 /* TLRNBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRNBridgeModule.h; path = TLReactNativeProject/TLRNBridgeModule.h; sourceTree = "<group>"; };
+		7E19F7901D217A390085ABC0 /* TLRNBridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRNBridgeModule.m; path = TLReactNativeProject/TLRNBridgeModule.m; sourceTree = "<group>"; };
+		7E19F7A11D217C590085ABC0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7E19F7A21D217C590085ABC0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7E19F7A41D217CD50085ABC0 /* RNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
+		7E19F7A51D217CD50085ABC0 /* RNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
+		7E19F7A71D217D0B0085ABC0 /* OCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCViewController.h; sourceTree = "<group>"; };
+		7E19F7A81D217D0B0085ABC0 /* OCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCViewController.m; sourceTree = "<group>"; };
 		7E4235CB1D1C28EE006831B8 /* ReactNativeToast.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeToast.xcodeproj; path = "../node_modules/react-native-sk-toast/ReactNativeToast.xcodeproj"; sourceTree = "<group>"; };
+		7E42361D1D1F9C95006831B8 /* TLCalendarManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TLCalendarManager.xcodeproj; path = ../node_modules/TLCalendarManager/ios/TLCalendarManager.xcodeproj; sourceTree = "<group>"; };
 		7EF8A6F51D113A0E00B67276 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		7EF8A71C1D11405600B67276 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		7EF8A71D1D11405600B67276 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
@@ -181,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4236231D1F9CAC006831B8 /* libTLCalendarManager.a in Frameworks */,
 				7E4235DF1D1C28FC006831B8 /* libReactNativeToast.a in Frameworks */,
 				7EF8A7051D113A7400B67276 /* libRNVectorIcons.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -275,6 +297,7 @@
 		13B07FAE1A68108700A75B9A /* TLReactNativeProject */ = {
 			isa = PBXGroup;
 			children = (
+				7E19F7A01D217C350085ABC0 /* Modules */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -282,6 +305,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				7E19F78F1D217A390085ABC0 /* TLRNBridgeModule.h */,
+				7E19F7901D217A390085ABC0 /* TLRNBridgeModule.m */,
 			);
 			name = TLReactNativeProject;
 			sourceTree = "<group>";
@@ -302,11 +327,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7E19F7A01D217C350085ABC0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7E19F7A11D217C590085ABC0 /* MainViewController.h */,
+				7E19F7A21D217C590085ABC0 /* MainViewController.m */,
+				7E19F7A41D217CD50085ABC0 /* RNViewController.h */,
+				7E19F7A51D217CD50085ABC0 /* RNViewController.m */,
+				7E19F7A71D217D0B0085ABC0 /* OCViewController.h */,
+				7E19F7A81D217D0B0085ABC0 /* OCViewController.m */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
 		7E4235CC1D1C28EE006831B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				7E4235DB1D1C28EE006831B8 /* libReactNativeToast.a */,
 				7E4235DD1D1C28EE006831B8 /* ReactNativeToastTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E42361E1D1F9C95006831B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E4236221D1F9C96006831B8 /* libTLCalendarManager.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -337,6 +383,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7E42361D1D1F9C95006831B8 /* TLCalendarManager.xcodeproj */,
 				7E4235CB1D1C28EE006831B8 /* ReactNativeToast.xcodeproj */,
 				7EF8A6F51D113A0E00B67276 /* RNVectorIcons.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -497,6 +544,10 @@
 					ProductGroup = 7EF8A6F61D113A0E00B67276 /* Products */;
 					ProjectRef = 7EF8A6F51D113A0E00B67276 /* RNVectorIcons.xcodeproj */;
 				},
+				{
+					ProductGroup = 7E42361E1D1F9C95006831B8 /* Products */;
+					ProjectRef = 7E42361D1D1F9C95006831B8 /* TLCalendarManager.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -584,6 +635,13 @@
 			remoteRef = 7E4235DC1D1C28EE006831B8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7E4236221D1F9C96006831B8 /* libTLCalendarManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTLCalendarManager.a;
+			remoteRef = 7E4236211D1F9C96006831B8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		7EF8A7041D113A0E00B67276 /* libRNVectorIcons.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -657,8 +715,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E19F7A61D217CD50085ABC0 /* RNViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				7E19F7A91D217D0B0085ABC0 /* OCViewController.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				7E19F7911D217A390085ABC0 /* TLRNBridgeModule.m in Sources */,
+				7E19F7A31D217C590085ABC0 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
