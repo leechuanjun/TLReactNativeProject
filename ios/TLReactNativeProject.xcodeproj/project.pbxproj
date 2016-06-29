@@ -21,7 +21,13 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		295B82ED39754760BFFDC5AB /* libRCTWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E942EEF9E34B459A4E69BB /* libRCTWeChat.a */; };
 		7E19F7911D217A390085ABC0 /* TLRNBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E19F7901D217A390085ABC0 /* TLRNBridgeModule.m */; };
+		7E19F8BE1D237D6C0085ABC0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E19F8BD1D237D6C0085ABC0 /* SystemConfiguration.framework */; };
+		7E19F8C01D237D860085ABC0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E19F8BF1D237D860085ABC0 /* CoreTelephony.framework */; };
+		7E19F8C21D237D930085ABC0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E19F8C11D237D930085ABC0 /* libsqlite3.0.tbd */; };
+		7E19F8C41D237DAC0085ABC0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E19F8C31D237DAC0085ABC0 /* libc++.tbd */; };
+		7E19F8C61D237DB50085ABC0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E19F8C51D237DB50085ABC0 /* libz.tbd */; };
 		7E4235DF1D1C28FC006831B8 /* libReactNativeToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4235DB1D1C28EE006831B8 /* libReactNativeToast.a */; };
 		7E4236231D1F9CAC006831B8 /* libTLCalendarManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4236221D1F9C96006831B8 /* libTLCalendarManager.a */; };
 		7EF8A7051D113A7400B67276 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF8A7041D113A0E00B67276 /* libRNVectorIcons.a */; };
@@ -107,6 +113,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTLinking;
 		};
+		7E19F8B61D2378E20085ABC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60FD972AAE714C5A9990AE29 /* RCTWeChat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86D238421BD0BB9E00C75D01;
+			remoteInfo = RCTWeChat;
+		};
 		7E4235DA1D1C28EE006831B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E4235CB1D1C28EE006831B8 /* ReactNativeToast.xcodeproj */;
@@ -164,9 +177,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TLReactNativeProject/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TLReactNativeProject/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		60FD972AAE714C5A9990AE29 /* RCTWeChat.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTWeChat.xcodeproj; path = "../node_modules/react-native-wechat/ios/RCTWeChat.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7E19F78F1D217A390085ABC0 /* TLRNBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLRNBridgeModule.h; path = TLReactNativeProject/TLRNBridgeModule.h; sourceTree = "<group>"; };
 		7E19F7901D217A390085ABC0 /* TLRNBridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLRNBridgeModule.m; path = TLReactNativeProject/TLRNBridgeModule.m; sourceTree = "<group>"; };
+		7E19F8BD1D237D6C0085ABC0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7E19F8BF1D237D860085ABC0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7E19F8C11D237D930085ABC0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7E19F8C31D237DAC0085ABC0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7E19F8C51D237DB50085ABC0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7E4235CB1D1C28EE006831B8 /* ReactNativeToast.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeToast.xcodeproj; path = "../node_modules/react-native-sk-toast/ReactNativeToast.xcodeproj"; sourceTree = "<group>"; };
 		7E42361D1D1F9C95006831B8 /* TLCalendarManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TLCalendarManager.xcodeproj; path = ../node_modules/TLCalendarManager/ios/TLCalendarManager.xcodeproj; sourceTree = "<group>"; };
 		7EF8A6F51D113A0E00B67276 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -179,6 +198,7 @@
 		7EF8A7221D11405600B67276 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		7EF8A7231D11405600B67276 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		C9E942EEF9E34B459A4E69BB /* libRCTWeChat.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTWeChat.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +213,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E19F8C61D237DB50085ABC0 /* libz.tbd in Frameworks */,
+				7E19F8C41D237DAC0085ABC0 /* libc++.tbd in Frameworks */,
+				7E19F8C21D237D930085ABC0 /* libsqlite3.0.tbd in Frameworks */,
+				7E19F8C01D237D860085ABC0 /* CoreTelephony.framework in Frameworks */,
+				7E19F8BE1D237D6C0085ABC0 /* SystemConfiguration.framework in Frameworks */,
 				7E4236231D1F9CAC006831B8 /* libTLCalendarManager.a in Frameworks */,
 				7E4235DF1D1C28FC006831B8 /* libReactNativeToast.a in Frameworks */,
 				7EF8A7051D113A7400B67276 /* libRNVectorIcons.a in Frameworks */,
@@ -206,6 +231,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				295B82ED39754760BFFDC5AB /* libRCTWeChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +343,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7E19F8AA1D2378E20085ABC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E19F8B71D2378E20085ABC0 /* libRCTWeChat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7E4235CC1D1C28EE006831B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +407,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				60FD972AAE714C5A9990AE29 /* RCTWeChat.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -389,6 +424,11 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAE1A68108700A75B9A /* TLReactNativeProject */,
+				7E19F8C51D237DB50085ABC0 /* libz.tbd */,
+				7E19F8C31D237DAC0085ABC0 /* libc++.tbd */,
+				7E19F8C11D237D930085ABC0 /* libsqlite3.0.tbd */,
+				7E19F8BF1D237D860085ABC0 /* CoreTelephony.framework */,
+				7E19F8BD1D237D6C0085ABC0 /* SystemConfiguration.framework */,
 				7EF8A71B1D11403A00B67276 /* Resources */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* TLReactNativeProjectTests */,
@@ -452,7 +492,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -508,6 +548,10 @@
 				{
 					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 7E19F8AA1D2378E20085ABC0 /* Products */;
+					ProjectRef = 60FD972AAE714C5A9990AE29 /* RCTWeChat.xcodeproj */;
 				},
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
@@ -596,6 +640,13 @@
 			fileType = archive.ar;
 			path = libRCTLinking.a;
 			remoteRef = 78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E19F8B71D2378E20085ABC0 /* libRCTWeChat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWeChat.a;
+			remoteRef = 7E19F8B61D2378E20085ABC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		7E4235DB1D1C28EE006831B8 /* libReactNativeToast.a */ = {
@@ -732,6 +783,10 @@
 				INFOPLIST_FILE = TLReactNativeProjectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLReactNativeProject.app/TLReactNativeProject";
 			};
@@ -745,6 +800,10 @@
 				INFOPLIST_FILE = TLReactNativeProjectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLReactNativeProject.app/TLReactNativeProject";
 			};
@@ -760,6 +819,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/Libraries/**",
+					"$(SRCROOT)/../node_modules/react-native-wechat/ios/**",
 				);
 				INFOPLIST_FILE = TLReactNativeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -780,6 +840,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/Libraries/**",
+					"$(SRCROOT)/../node_modules/react-native-wechat/ios/**",
 				);
 				INFOPLIST_FILE = TLReactNativeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -829,6 +890,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-wechat/ios/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -869,6 +931,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-wechat/ios/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;

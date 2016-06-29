@@ -10,6 +10,7 @@
     "react-native": "0.27.2",
     "react-native-sk-toast": "^1.0.2",
     "react-native-swiper": "^1.4.5",
-    "react-native-vector-icons": "^2.0.3"
+    "react-native-vector-icons": "^2.0.3",
+    "react-native-wechat": "^1.4.6"
   }
 }
