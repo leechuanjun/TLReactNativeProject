@@ -59,6 +59,7 @@ import Course37 from '../advanced/course37';
 import Course38 from '../advanced/course38';
 import Course39 from '../advanced/course39';
 import Course40 from '../advanced/course40';
+import Course41 from '../actual_combat/course41';
 
 export default class extends Component{
  constructor() {
@@ -109,6 +110,9 @@ export default class extends Component{
     ,{ key:37, title: "原生模块封装基础篇", component: Course38, isFA: false, icon: "ios-star", size: 50, color: "#ffab6b", hideNav: false, }
     ,{ key:38, title: "原生模块封装特性篇", component: Course39, isFA: false, icon: "ios-star-half", size: 50, color: "#eeab6b", hideNav: false, }
     ,{ key:39, title: "原生混合与数据通信开发", component: Course40, isFA: false, icon: "ios-star-outline", size: 50, color: "#ddab6b", hideNav: false, }
+   ],
+   courses_actual_combat:[
+     ,{ key:40, title: "电影数据的App(Movie Fetcher)", component: Course41, isFA: false, icon: "ios-tennisball", size: 50, color: "#893D54", hideNav: false, }
    ]
    }
  }
@@ -140,6 +144,14 @@ export default class extends Component{
    })
  }
 
+ _jumpToCourses_actual_combat(index){
+   this.props.navigator.push({
+     title: this.state.courses_actual_combat[index].title,
+     component: this.state.courses_actual_combat[index].component,
+     navigationBarHidden: this.state.courses_actual_combat[index].hideNav,
+   })
+ }
+
  render() {
    var onThis = this;
    var boxs_component = this.state.courses_component.map(function(elem, index) {
@@ -167,6 +179,16 @@ export default class extends Component{
        <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_advanced(index)}>
          <View style={styles.boxContainer}>
            <Text style={styles.boxText}>Course{index+35}</Text>
+           {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
+         </View>
+       </TouchableHighlight>
+     );
+   })
+   var boxs_actual_combat = this.state.courses_actual_combat.map(function(elem, index) {
+     return(
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_actual_combat(index)}>
+         <View style={styles.boxContainer}>
+           <Text style={styles.boxText}>Course{index+40}</Text>
            {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
          </View>
        </TouchableHighlight>
@@ -206,6 +228,12 @@ export default class extends Component{
        </View>
        <View style={styles.touchBoxContainer}>
          {boxs_advanced}
+       </View>
+       <View style={styles.titleView}>
+         <Text style={styles.titleDesc}>四、RN实战</Text>
+       </View>
+       <View style={styles.touchBoxContainer}>
+         {boxs_actual_combat}
        </View>
      </ScrollView>
    );
