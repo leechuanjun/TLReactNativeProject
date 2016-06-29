@@ -59,8 +59,6 @@ import Course37 from '../advanced/course37';
 import Course38 from '../advanced/course38';
 import Course39 from '../advanced/course39';
 import Course40 from '../advanced/course40';
-import Course41 from '../actual_combat/course41';
-import Course42 from '../actual_combat/course42';
 
 export default class extends Component{
  constructor() {
@@ -111,13 +109,9 @@ export default class extends Component{
     ,{ key:37, title: "原生模块封装基础篇", component: Course38, isFA: false, icon: "ios-star", size: 50, color: "#ffab6b", hideNav: false, }
     ,{ key:38, title: "原生模块封装特性篇", component: Course39, isFA: false, icon: "ios-star-half", size: 50, color: "#eeab6b", hideNav: false, }
     ,{ key:39, title: "原生混合与数据通信开发", component: Course40, isFA: false, icon: "ios-star-outline", size: 50, color: "#ddab6b", hideNav: false, }
-  ],
-  courses_actual_combat:[
-    ,{ key:40, title: "电影数据的App(Movie Fetcher)", component: Course41, isFA: false, icon: "ios-tennisball", size: 50, color: "#893D54", hideNav: false, }
-    ,{ key:41, title: "微信好友/朋友圈分享功能", component: Course42, isFA: false, icon: "ios-tennisball-outline", size: 50, color: "#ff856c", hideNav: false, }
-  ]
+   ]
+   }
  }
-}
 
  componentWillMount() {
  }
@@ -143,14 +137,6 @@ export default class extends Component{
      title: this.state.courses_advanced[index].title,
      component: this.state.courses_advanced[index].component,
      navigationBarHidden: this.state.courses_advanced[index].hideNav,
-   })
- }
-
- _jumpToCourses_actual_combat(index){
-   this.props.navigator.push({
-     title: this.state.courses_actual_combat[index].title,
-     component: this.state.courses_actual_combat[index].component,
-     navigationBarHidden: this.state.courses_actual_combat[index].hideNav,
    })
  }
 
@@ -186,27 +172,17 @@ export default class extends Component{
        </TouchableHighlight>
      );
    })
-   var boxs_actual_combat = this.state.courses_actual_combat.map(function(elem, index) {
-     return(
-       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_actual_combat(index)}>
-         <View style={styles.boxContainer}>
-           <Text style={styles.boxText}>Course{index+40}</Text>
-           {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
-         </View>
-       </TouchableHighlight>
-     );
-   })
    return(
      <ScrollView>
        <Swiper height={150} showsButtons={false} autoplay={true}
          activeDot={<View style={{backgroundColor: 'rgba(255,255,255,0.8)', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />}>
-         <TouchableHighlight onPress={()=> onThis._jumpToCourses_component(0)}>
+         <TouchableHighlight onPress={()=> onThis._jumpToCourses(0)}>
            <View style={styles.slide}>
              <Image style={styles.image} source={{uri:'course1'}}></Image>
              <Text style={styles.slideText}>Course1: View</Text>
            </View>
          </TouchableHighlight>
-         <TouchableHighlight onPress={()=> onThis._jumpToCourses_component(1)}>
+         <TouchableHighlight onPress={()=> onThis._jumpToCourses(1)}>
            <View style={styles.slide}>
              <Image style={styles.image} source={{uri:'course2'}}></Image>
              <Text style={styles.slideText}>Course2: Text</Text>
@@ -230,12 +206,6 @@ export default class extends Component{
        </View>
        <View style={styles.touchBoxContainer}>
          {boxs_advanced}
-       </View>
-       <View style={styles.titleView}>
-         <Text style={styles.titleDesc}>四、RN实战</Text>
-       </View>
-       <View style={styles.touchBoxContainer}>
-         {boxs_actual_combat}
        </View>
      </ScrollView>
    );
