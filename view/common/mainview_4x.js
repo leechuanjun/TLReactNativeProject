@@ -158,7 +158,7 @@ export default class extends Component{
    var onThis = this;
    var boxs_component = this.state.courses_component.map(function(elem, index) {
      return(
-       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%3==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_component(index)}>
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_component(index)}>
          <View style={styles.boxContainer}>
            <Text style={styles.boxText}>{elem.title}</Text>
            {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
@@ -168,7 +168,7 @@ export default class extends Component{
    })
    var boxs_api = this.state.courses_api.map(function(elem, index) {
      return(
-       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%3==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_api(index)}>
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_api(index)}>
          <View style={styles.boxContainer}>
            <Text style={styles.boxText}>{elem.title}</Text>
            {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
@@ -178,7 +178,7 @@ export default class extends Component{
    })
    var boxs_advanced = this.state.courses_advanced.map(function(elem, index) {
      return(
-       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%3==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_advanced(index)}>
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_advanced(index)}>
          <View style={styles.boxContainer}>
            <Text style={styles.boxText}>{elem.title}</Text>
            {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
@@ -188,7 +188,7 @@ export default class extends Component{
    })
    var boxs_actual_combat = this.state.courses_actual_combat.map(function(elem, index) {
      return(
-       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%3==3?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_actual_combat(index)}>
+       <TouchableHighlight key={elem.key} style={[styles.touchBox, index%4==0?styles.touchBox2:styles.touchBox1]} underlayColor="#eee" onPress={()=> onThis._jumpToCourses_actual_combat(index)}>
          <View style={styles.boxContainer}>
            <Text style={styles.boxText}>{elem.title}</Text>
            {elem.isFA? <IconFA size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></IconFA>:<Icon size={elem.size} name={elem.icon} style={[styles.boxIcon,{color:elem.color}]}></Icon>}
@@ -244,8 +244,8 @@ export default class extends Component{
 
 const styles = StyleSheet.create({
  touchBox:{
-   width: Util.size.width/3-0.33334,
-   height:Util.size.width/3,
+   width: Util.size.width/4-0.33334,//Util.size.width/3-0.33334,
+   height:Util.size.width/4-0.25,
    backgroundColor:"#fff",
  },
  touchBoxContainer:{
@@ -274,8 +274,8 @@ const styles = StyleSheet.create({
  boxContainer:{
    alignItems:"center",
    justifyContent:"center",
-   width: Util.size.width/3,
-   height:Util.size.width/3,
+   width: Util.size.width/4,
+   height:Util.size.width/4,
  },
  boxIcon:{
    position:"relative",
@@ -284,11 +284,11 @@ const styles = StyleSheet.create({
  boxText:{
    position:"absolute",
    bottom:10,
-   width:Util.size.width/3,
+   width:Util.size.width/4,
    textAlign:"center",
    left: 0,
    backgroundColor:"transparent",
-   fontWeight: "500",
+   fontSize: 8,
  },
  slide: {
    flex: 1,
@@ -316,8 +316,7 @@ const styles = StyleSheet.create({
    textAlign: 'left',
    margin: 20,
    color:'#fff',
-   alignSelf:'center',
-   fontWeight: "900",
+   alignSelf:'center'
  },
  titleView: {
    height:45,
