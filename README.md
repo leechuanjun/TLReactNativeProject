@@ -90,4 +90,7 @@
 * Course40 : React Native进阶之原生`混合与数据通信开发`详解-适配iOS开发。
 
 ### React Native实战学习
-* Course41 : 带大家一步步开发一个电影数据的App(Movie Fetcher)
+
+* Course41 : 带大家一步步开发一个电影数据的App(Movie Fetcher)。
+
+* Course42 : 超详细React Native实现微信好友/朋友圈分享功能-Android/iOS双平台通用。

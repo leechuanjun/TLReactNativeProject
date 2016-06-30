@@ -60,6 +60,7 @@ import Course38 from '../advanced/course38';
 import Course39 from '../advanced/course39';
 import Course40 from '../advanced/course40';
 import Course41 from '../actual_combat/course41';
+import Course42 from '../actual_combat/course42';
 
 export default class extends Component{
  constructor() {
@@ -113,6 +114,7 @@ export default class extends Component{
    ],
    courses_actual_combat:[
      ,{ key:40, title: "电影数据的App(Movie Fetcher)", component: Course41, isFA: false, icon: "ios-tennisball", size: 50, color: "#893D54", hideNav: false, }
+     ,{ key:41, title: "微信好友/朋友圈分享功能", component: Course42, isFA: false, icon: "ios-tennisball-outline", size: 50, color: "#893D54", hideNav: false, }
    ]
    }
  }
