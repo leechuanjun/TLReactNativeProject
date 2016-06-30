@@ -64,7 +64,11 @@
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-
+  
+  //加载界面时
+  rootView.loadingView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  rootView.loadingView.backgroundColor = [UIColor yellowColor];
+  
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
