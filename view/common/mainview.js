@@ -200,13 +200,13 @@ export default class extends Component{
      <ScrollView>
        <Swiper height={150} showsButtons={false} autoplay={true}
          activeDot={<View style={{backgroundColor: 'rgba(255,255,255,0.8)', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />}>
-         <TouchableHighlight onPress={()=> onThis._jumpToCourses(0)}>
+         <TouchableHighlight onPress={()=> onThis._jumpToCourses_component(0)}>
            <View style={styles.slide}>
              <Image style={styles.image} source={{uri:'course1'}}></Image>
              <Text style={styles.slideText}>Course1: View</Text>
            </View>
          </TouchableHighlight>
-         <TouchableHighlight onPress={()=> onThis._jumpToCourses(1)}>
+         <TouchableHighlight onPress={()=> onThis._jumpToCourses_component(1)}>
            <View style={styles.slide}>
              <Image style={styles.image} source={{uri:'course2'}}></Image>
              <Text style={styles.slideText}>Course2: Text</Text>
