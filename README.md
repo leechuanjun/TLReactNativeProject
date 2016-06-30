@@ -8,7 +8,7 @@
   
   ![](/screenshots/IMG_03.jpg) 
   
-  ![](/screenshots/IMG_03.jpg) 
+  ![](/screenshots/IMG_04.jpg) 
   
 ## 课题目录
 
