@@ -62,10 +62,10 @@ export default class extends Component{
                       if (isInstalled) {
                         WeChat.shareToSession({
                           title:'微信好友测试链接',
-                          description: '分享自:leechuanjun的技术专栏(http://www.jianshu.com/writer#/notebooks/4164920/notes/4601793)',
+                          description: '分享自:leechuanjun的技术专栏(www.jianshu.com)',
                           thumbImage: 'http://mta.zttit.com:8080/images/ZTT_1404756641470_image.jpg',
                           type: 'news',
-                          webpageUrl: 'http://www.jianshu.com/'
+                          webpageUrl: 'http://www.jianshu.com/p/ce5439dd1f52'
                         })
                         .catch((error) => {
                           ToastIOS.bottom(error.message);
@@ -98,10 +98,10 @@ export default class extends Component{
                       if (isInstalled) {
                         WeChat.shareToTimeline({
                           title:'微信朋友圈测试链接',
-                          description: '分享自:leechuanjun的技术专栏(http://www.jianshu.com/writer#/notebooks/4164920/notes/4601793)',
+                          description: '分享自:leechuanjun的技术专栏(www.jianshu.com)',
                           thumbImage: 'http://mta.zttit.com:8080/images/ZTT_1404756641470_image.jpg',
                           type: 'news',
-                          webpageUrl: 'http://www.jianshu.com/'
+                          webpageUrl: 'http://www.jianshu.com/p/ce5439dd1f52'
                         })
                         .catch((error) => {
                           ToastIOS.bottom(error.message);
