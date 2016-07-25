@@ -87,7 +87,7 @@
         refreshControl={
           <RefreshControl
             refreshing={this.state.isRefreshing}
-            onRefresh={this._onRefresh}
+            onRefresh={this._onRefresh.bind(this)}
             tintColor="#ff0000"
             title="Loading..."
             colors={['#ff0000', '#00ff00', '#0000ff','#3ad564']}
